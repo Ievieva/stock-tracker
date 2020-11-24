@@ -27,6 +27,6 @@ class BestBuy implements Client
     protected function endpoint($sku): string
     {
         $key = config('services.clients.bestBuy.key');
-        return "https://www.bestbuy.com/v1/products/{$sku}.json?apiKey={$key}";
+        return "https://www.bestbuy.com/v1/products/{$sku}.json?apiKey={$key}"; //no key, not working
     }
 }
